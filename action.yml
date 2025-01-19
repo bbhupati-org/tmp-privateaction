@@ -1,0 +1,25 @@
+name: "My Composite Action"
+description: "A composite action that performs a series of tasks"
+inputs:
+  input1:
+    description: "Input 1 description"
+    required: false
+  input2:
+    description: "Input 2 description"
+    required: false
+# outputs:
+#   output1:
+#     description: "Output 1 description"
+runs:
+  using: "composite"
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # - name: Run a script
+    #   run: ./scripts/your-script.sh ${{ inputs.input1 }} ${{ inputs.input2 }}
+    #   shell: bash
+
+    - name: Set an output
+      run: echo "This is from private action"
+      shell: bash
