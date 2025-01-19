@@ -13,13 +13,12 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-
+    # - name: Checkout code
+    #   uses: actions/checkout@v3
     # - name: Run a script
     #   run: ./scripts/your-script.sh ${{ inputs.input1 }} ${{ inputs.input2 }}
     #   shell: bash
-
     - name: Set an output
-      run: echo "This is from private action"
+      run: |
+        echo "This is from private action ${{ inputs.input1 }}"
       shell: bash
