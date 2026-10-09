@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-BQ3Pqp0m.js";var t=e();function n({title:e,description:n}){return(0,t.jsxs)(`div`,{className:`mb-6`,children:[(0,t.jsx)(`h1`,{className:`text-3xl font-bold tracking-tight`,children:e}),(0,t.jsx)(`p`,{className:`mt-2 text-muted-foreground`,children:n})]})}export{n as t};
